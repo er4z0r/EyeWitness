@@ -213,17 +213,17 @@ case ${osinfo} in
     echo '[*] Installing Debian Dependencies'
     apt-get install -y cmake python3 xvfb python3-pip python-netaddr python3-dev tesseract-ocr firefox-esr
     echo '[*] Upgrading paramiko'
-    python3 -m pip install --upgrade paramiko
+    pip3 install --upgrade paramiko
     echo
     echo '[*] Installing Python Modules'
-    python3 -m pip install fuzzywuzzy
-    python3 -m pip install selenium --upgrade
-    python3 -m pip install python-Levenshtein
-    python3 -m pip install pyasn1
-    python3 -m pip install pyvirtualdisplay
-    python3 -m pip install beautifulsoup4
-    python3 -m pip install pytesseract
-    python3 -m pip install netaddr
+    pip3 install fuzzywuzzy
+    pip3 install selenium --upgrade
+    pip3 install python-Levenshtein
+    pip3 install pyasn1
+    pip3 install pyvirtualdisplay
+    pip3 install beautifulsoup4
+    pip3 install pytesseract
+    pip3 install netaddr
     echo
     cd ../bin/
     MACHINE_TYPE=`uname -m`
