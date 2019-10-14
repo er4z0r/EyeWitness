@@ -16,7 +16,7 @@ RUN export uid=1000 gid=1000 && \
 WORKDIR /home/$user
 
 #RUN	git clone https://github.com/ChrisTruncer/EyeWitness.git
-RUN 	git clone git@github.com:er4z0r/EyeWitness.git 
+RUN 	git clone https://github.com/er4z0r/EyeWitness.git
 
 WORKDIR /home/$user/EyeWitness
 
